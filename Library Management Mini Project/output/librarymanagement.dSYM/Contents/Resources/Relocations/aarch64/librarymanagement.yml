@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/paarth/Library/Mobile Documents/com~apple~CloudDocs/Learning C++/Code/output/librarymanagement'
+binary-path:     '/Users/paarth/Library/Mobile Documents/com~apple~CloudDocs/Learning C++/Code/Library Management Mini Project/output/librarymanagement'
 relocations:
   - { offsetInCU: 0x2F31, offset: 0x2F31, size: 0x8, addend: 0x0, symName: __ZNSt3__16copy_nB7v160006IPKcmPcEENS_9enable_ifIXsr33__is_cpp17_random_access_iteratorIT_EE5valueET1_E4typeES5_T0_S6_, symObjAddr: 0x338C, symBinAddr: 0x100006524, symSize: 0x44 }
   - { offsetInCU: 0x4A44, offset: 0x4A44, size: 0x8, addend: 0x0, symName: __ZNSt3__17advanceB7v160006INS_21__list_const_iteratorIP4BookPvEEllvEEvRT_T0_, symObjAddr: 0x47E0, symBinAddr: 0x100007978, symSize: 0x50 }
