@@ -51,14 +51,30 @@ public:
 
     string borrowBook(Book *book)
     {
-        borrowedBooks.push_front(book);
-        return book->name + " borrowed successfully";
+        bool found = (find(borrowedBooks.begin(), borrowedBooks.end(), book) != borrowedBooks.end());
+        if (found)
+        {
+            return "You have already borrowed this book";
+        }
+        else
+        {
+            borrowedBooks.push_front(book);
+            return book->name + " borrowed successfully";
+        }
     };
     string returnBook(Book *book)
     {
-        borrowedBooks.remove(book);
-        return book->name + " returned successfully";
-    };
+        bool found = (find(borrowedBooks.begin(), borrowedBooks.end(), book) != borrowedBooks.end());
+        if (found)
+        {
+            borrowedBooks.remove(book);
+            return book->name + " returned successfully";
+        }
+        else
+        {
+            return "You have not borrowed this book, so you cannot return it";
+        }
+     };
     int getNumberOfBooks()
     {
         return borrowedBooks.size();
